@@ -185,7 +185,7 @@ const MovieDetail = () => {
             {movie.poster_path && (
               <Poster
                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                alt={movie.title}
+                alt={`Movie poster for ${movie.title}`}
               />
             )}
             <InfoWrapper>

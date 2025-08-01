@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import { Link } from "react-router-dom"
+import styled from 'styled-components'
 
 const CardContainer = styled.div`
   position: relative;
@@ -52,7 +52,7 @@ const Card = ({ movie }) => {
       <CardContainer>
         <PosterImage
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-          alt={movie.title}
+          alt={`Movie poster for ${movie.title}`} //screenreader reads movieposter for title of movie
         />
         <Overlay>
           <h2>{movie.title}</h2>
